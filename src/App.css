@@ -1,0 +1,183 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+#image {
+  height: 100%;
+  margin: 20px;
+  aspect-ratio: 7016 / 9933;
+  background-color: #000000;
+  position: relative;
+}
+
+.interaction{
+
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.background {
+  z-index: 1;
+}
+
+.writing {
+  z-index: 2;
+  margin-left: 220px;
+  scale: 0.8;
+}
+
+.writingGrand{
+  z-index: 2;
+  margin-left: -150px;
+  scale: 0.6;
+}
+
+
+
+.writingG{
+  z-index: 2;
+  margin-left: -250px;
+  margin-top: -200px;
+  scale: 0.4;
+}
+
+.anneauxBack{
+  z-index: 2;
+  top: -330px;
+  left: 20px;
+  scale: 0.55;
+}
+
+
+.Sprite {
+  z-index: 3;
+scale: 1.05;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.anneauxFront{
+  z-index: 99;
+  position: absolute;
+  top: -330px;
+  left: 20px;
+  scale: 0.55;
+}
+
+.croixHG{
+  position: absolute;
+  top: -410px;
+  left: -280px;
+  scale: 0.11;
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+  z-index: 99;
+  }
+.croixHG:hover {
+  transform: rotate(-270deg);
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+}
+
+.croixBG{
+  z-index: 99;
+  position: absolute;
+  top: 410px;
+  left: -280px;
+  scale: 0.11;
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+}
+
+.croixBG:hover {
+  transform: rotate(-270deg);
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+}
+
+.croixBD{
+  z-index: 99;
+  position: absolute;
+  top: 410px;
+  left: 280px;
+  scale: 0.11;
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+}
+
+.croixBD:hover {
+  transform: rotate(270deg);
+  transition: 0.7s cubic-bezier(.49, 0, .58, .99);
+}
+
+
+.carrerRouge{
+  z-index: 6;
+  position: absolute;
+  rotate: -30deg;
+  top: -150px;
+  left: -100px;
+  scale: 0.3;
+}
+
+.diagonalRect {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.bottomLeftRect {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 180px;
+  height: 1420px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.line{
+  position: absolute;
+  top: 590px;
+  left: 10px;
+  width: 8%;
+  height: 30%;
+  z-index: 5;
+}
+
+.topRightRect {
+  position: absolute;
+  top: 110px;
+  left: 300px;
+  width: 270px;
+  height: 160px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.Yeux{
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  width: 19%;
+  height: 7%;
+  z-index: 99;
+}
